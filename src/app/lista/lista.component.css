@@ -1,0 +1,19 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nao-concluida, .concluida {
+    width: max-content;
+    padding: 10px;
+}
+
+.nao-concluida {
+    background-color: tomato;
+    color: white;
+    
+}
+
+.concluida {
+    background-color: lightgreen;
+    color: green;
+}

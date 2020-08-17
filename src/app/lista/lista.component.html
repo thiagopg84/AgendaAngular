@@ -1,0 +1,15 @@
+<ul>
+    <li *ngFor="let t of recebeListaTarefas">
+        <ul>
+            <li>id: {{ t.id }}</li>
+            <li>data: {{ t.data }}</li>
+            <li>tarefa: {{ t.tarefa }}</li>
+            <li>tipo: {{ t.tipo }}</li>
+            <p *ngIf="!t.concluida" class="nao-concluida">TAREFA NÃO CONCLUÍDA</p>
+            <p *ngIf="t.concluida" class="concluida">TAREFA CONCLUÍDA</p>
+            <button *ngIf="!t.concluida" (click)="t.showID()">Marcar como tarefa concluída</button>
+            <button *ngIf="t.concluida" (click)="t.showID()">Marcar como tarefa não concluída</button>
+        </ul>
+        <br>
+    </li>
+</ul>
